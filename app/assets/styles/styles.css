@@ -1,3 +1,8 @@
-/*Used for importing css modules*/
+@import "normalize.css";
+@import "base/_global";
+@import "modules/_hero";
 
-@import "modules/_hero"
+
+ 
+
+

@@ -1,0 +1,11 @@
+.hero{
+	position: relative;
+}
+
+.hero__text-content{
+	position: absolute;
+	top: 78%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
