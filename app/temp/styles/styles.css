@@ -467,15 +467,27 @@ img {
 
 .hero{
 	position: relative;
+
 }
 
 .hero__text-content{
-	position: absolute;
-	top: 78%;
-	left: 0;
-	width: 100%;
-	text-align: center;
+		position: absolute;
+		top: 78%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		color: white;
 }
+
+.hero__title {
+		margin-bottom: .7rem;
+		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
+	}
+
+.hero__subtitle {
+		margin-top: 0;
+		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
+	}
 
 
  
