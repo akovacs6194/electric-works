@@ -468,7 +468,15 @@ img {
 .hero{
 	position: relative;
 
+	height: 65vh;
+	overflow: hidden;
+
 }
+
+.hero__hero-image {
+		/*Move image up*/
+
+	}
 
 .hero__text-content{
 		position: absolute;
@@ -476,8 +484,8 @@ img {
 		left: 0;
 		width: 100%;
 		text-align: center;
-		color: white;
-}
+		color: #FFF;
+	}
 
 .hero__title {
 		margin-bottom: .7rem;
@@ -487,6 +495,18 @@ img {
 .hero__subtitle {
 		margin-top: 0;
 		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
+	}
+
+.btn {
+	background: #9B5E44;
+	color: #FFF;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	display: inline-block;
+}
+
+.btn--large {
+		padding: 1.3rem 2.3rem;
 	}
 
 

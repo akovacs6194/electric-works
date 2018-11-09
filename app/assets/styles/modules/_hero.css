@@ -1,5 +1,13 @@
 .hero{
 	position: relative;
+
+	height: 65vh;
+	overflow: hidden;
+
+	&__hero-image {
+		/*Move image up*/
+
+	}
 	
 	&__text-content{
 		position: absolute;
@@ -7,12 +15,13 @@
 		left: 0;
 		width: 100%;
 		text-align: center;
-		color: white;
-}
+		color: #FFF;
+	}
 	&__title {
 		margin-bottom: .7rem;
 		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
 	}
+
 	&__subtitle {
 		margin-top: 0;
 		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
