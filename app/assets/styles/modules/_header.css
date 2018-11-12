@@ -1,0 +1,25 @@
+header{
+	background: white;
+}
+
+.header{
+	background: white;
+	position: relative;
+
+	&__logo{
+		margin-left: 12%;
+		display: inline-block;
+		max-width: 35%;
+		height: auto;
+	}
+	&__slogan{
+		display: inline;
+		margin-left: 1rem;
+		position: absolute;
+		top: 50%;
+		font-style: italic;
+		font-size: 1.5rem;
+
+		/*Resize for mobile*/
+	}
+}

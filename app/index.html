@@ -19,25 +19,26 @@
 	<header id="heading">
 		<div class="heading">
 			<div class="heading__phone">
-				<i class="fas fa-phone"></i>
-				<p>(860) 343-0467</p>
+				<i class="fas fa-phone heading__icon"></i>
+				<p class="heading__text">(860) 343-0467</p>
 			</div>
 			<div class="heading__email">
-				<i class="fas fa-envelope"></i>
-				<p>electricworksinc@comcast.net</p>
+				<i class="fas fa-envelope heading__icon"></i>
+				<p class="heading__text">electricworksinc@comcast.net</p>
 			</div>
 		</div>
 		<div class="header">
-			<img src="assets/images/colorLogo.jpg">
-			<p>Building Relationships with Customers</p>
+			<img class="header__logo" src="assets/images/colorLogo.jpg">
+			<p class="header__slogan">Building Relationships with Customers</p>
 		</div>
+		<hr>
 		<nav class="primary-nav">
-			<ul>
-				<li><a href="#Home">Home</a></li>
-				<li><a href="#About">About</a></li>
-				<li><a href="#Services">Services</a></li>
-				<li><a href="#Projects">Projects</a></li>
-				<li><a href="#Contact">Contact</a></li>  
+			<ul class="primary-nav__list">
+				<li><a class="primary-nav__item" href="#Home">Home</a></li>
+				<li><a class="primary-nav__item" href="#About">About</a></li>
+				<li><a class="primary-nav__item" href="#Services">Services</a></li>
+				<li><a class="primary-nav__item" href="#Projects">Projects</a></li>
+				<li><a class="primary-nav__item" href="#Contact">Contact</a></li>  
 			</ul>
 		</nav>
 	</header>
@@ -47,7 +48,11 @@
 
 		<!-- Hero section -->
 		<div class="hero">
-			<img class="hero__image" src="assets/images/hero--image.jpg">
+			<!-- <picture>
+				<source srcset="assets/images/hero--image.jpg" media="(min-width: 1200px)">
+				<source srcset="assets/images/hero--image-medium.jpg" media="(min-width: 768px)">
+				<img class="hero__image" src="assets/images/hero--image-small.jpg">
+			</picture> -->
 			<div class="hero__text-content">
 				<h2 class="hero__title">Connecticut's Trusted</h2>
 				<h1 class="hero__subtitle">Commercial Electrician since 1992</h1>

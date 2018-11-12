@@ -455,9 +455,14 @@ template {
 	        box-sizing: border-box;
 }
 
+html{
+	height: 100%;
+}
+
 body {
 	font-family: 'Roboto', 'sans-serif';
-	color: #333; 
+	color: #333;
+	height: 100%; 
 }
 
 img {
@@ -467,34 +472,91 @@ img {
 
 .hero{
 	position: relative;
-
-	height: 60vh;
 	overflow: hidden;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/assets/images/hero--image.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/images/hero--image.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
 }
 
-.hero__hero-image {
-		/*Move image up*/
+@media (min-height: 768px) {
 
-	}
+.hero{
+    	height: 65vh
+
+
+}
+    }
 
 .hero__text-content{
 		position: absolute;
-		top: 78%;
+		top: 80%;
 		left: 0;
+		-webkit-transform: translateY(-10%);
+		        transform: translateY(-10%);
 		width: 100%;
 		text-align: center;
 		color: #FFF;
+		text-transform: uppercase;
 	}
 
 .hero__title {
-		margin-bottom: .7rem;
+		margin-bottom: .2rem;
 		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
+		font-size: 1.1rem;
+		font-weight: 400;
+	}
+
+@media (min-width: 530px) {
+
+.hero__title {
+			font-size: 1.4rem
+	}
+	}
+
+@media (min-width: 800px) {
+
+.hero__title {
+			font-size: 1.8rem
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.hero__title {
+			font-size: 2.2rem
+	}
 	}
 
 .hero__subtitle {
 		margin-top: 0;
 		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
+		font-size: 1.3rem;
+		font-weight: 400;
+	}
+
+@media (min-width: 530px) {
+
+.hero__subtitle {
+			font-size: 1.6rem
+	}
+	}
+
+@media (min-width: 800px) {
+
+.hero__subtitle {
+			font-size: 2rem
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.hero__subtitle {
+			font-size: 2.5rem
+	}
 	}
 
 .btn {
@@ -509,9 +571,10 @@ img {
 		padding: 1.3rem 2.3rem;
 	}
 
+/*Button responsive design in lecture 22 @ 6min*/
+
 #heading{
-	background-color: #bbb;
-	height: 40vh;
+	background-color: white;	
 }
 
 .heading{
@@ -519,11 +582,72 @@ img {
 }
 
 .heading__phone{
+		display: inline-block;
 		color: white;
+		padding: 5px;
+		margin-top: 3px;
+		margin-bottom: 3px;
+		margin-left: 75%;
+		/* Adjust for smaller screens */
 	}
 
 .heading__email{
+		display: inline-block;
 		color: white;
+		margin-left: 7px;
+	}
+
+.heading__icon{
+		display: inline;
+	}
+
+.heading__text{
+		display: inline;
+	}
+
+header{
+	background: white;
+}
+
+.header{
+	background: white;
+	position: relative;
+}
+
+.header__logo{
+		margin-left: 12%;
+		display: inline-block;
+		max-width: 35%;
+		height: auto;
+	}
+
+.header__slogan{
+		display: inline;
+		margin-left: 1rem;
+		position: absolute;
+		top: 50%;
+		font-style: italic;
+		font-size: 1.5rem;
+
+		/*Resize for mobile*/
+	}
+
+.primary-nav__list{
+		list-style: none;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin-left: 65%;
+
+	}
+
+.primary-nav__item{
+		margin: 0rem 1rem 0rem 0rem;
+		padding: 0rem;
+		text-decoration: none;
+		color: #707070;
+		font-size: 1rem;
+
 	}
 
 

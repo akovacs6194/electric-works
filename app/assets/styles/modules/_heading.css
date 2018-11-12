@@ -1,15 +1,30 @@
 #heading{
-	background-color: #bbb;
-	height: 40vh;
+	background-color: white;	
 }
 
 .heading{
 	background: $mainBlue;
 
 	&__phone{
+		display: inline-block;
 		color: white;
+		padding: 5px;
+		margin-top: 3px;
+		margin-bottom: 3px;
+		margin-left: 75%;
+		/* Adjust for smaller screens */
 	}
 	&__email{
+		display: inline-block;
 		color: white;
+		margin-left: 7px;
+	}
+
+	&__icon{
+		display: inline;
+	}
+
+	&__text{
+		display: inline;
 	}
 }

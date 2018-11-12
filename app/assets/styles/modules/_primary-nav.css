@@ -1,0 +1,18 @@
+.primary-nav{
+
+	&__list{
+		list-style: none;
+		display: flex;
+		margin-left: 65%;
+
+	}
+
+	&__item{
+		margin: 0rem 1rem 0rem 0rem;
+		padding: 0rem;
+		text-decoration: none;
+		color: $mainGray;
+		font-size: 1rem;
+
+	}
+}
