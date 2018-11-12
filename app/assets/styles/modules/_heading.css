@@ -1,3 +1,15 @@
+#heading{
+	background-color: #bbb;
+	height: 40vh;
+}
+
 .heading{
-	
+	background: $mainBlue;
+
+	&__phone{
+		color: white;
+	}
+	&__email{
+		color: white;
+	}
 }

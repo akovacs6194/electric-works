@@ -468,7 +468,7 @@ img {
 .hero{
 	position: relative;
 
-	height: 65vh;
+	height: 60vh;
 	overflow: hidden;
 
 }
@@ -507,6 +507,23 @@ img {
 
 .btn--large {
 		padding: 1.3rem 2.3rem;
+	}
+
+#heading{
+	background-color: #bbb;
+	height: 40vh;
+}
+
+.heading{
+	background: #000656;
+}
+
+.heading__phone{
+		color: white;
+	}
+
+.heading__email{
+		color: white;
 	}
 
 
