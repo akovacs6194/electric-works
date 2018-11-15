@@ -3,25 +3,54 @@
 }
 
 .heading{
-	background: $mainBlue;
+	background: white;
+	border-bottom: 1px $mainGray solid;
+
+	@mixin atLarge {
+		background: $mainBlue;
+	}
 
 	&__phone{
 		display: inline-block;
-		color: white;
+		color: $mainGray;
 		padding: 5px;
 		margin-top: 3px;
 		margin-bottom: 3px;
-		margin-left: 75%;
-		/* Adjust for smaller screens */
+		margin-left: 40%;
+		font-size: .5rem;
+
+
+		@mixin atMedium{
+			font-size: .8rem;
+		}
+
+		@mixin atLarge{
+			font-size: 1rem;
+			margin-left: 75%;
+			padding: 10px;
+			margin-top: 0;
+			margin-bottom: 0;
+			color: white;
+		}
+
+		
+
 	}
 	&__email{
 		display: inline-block;
-		color: white;
+		color: $mainGray;
 		margin-left: 7px;
+		font-size: .5rem;
+
+		@mixin atLarge{
+			font-size: 1rem;
+			color: white;
+		}
 	}
 
 	&__icon{
 		display: inline;
+		margin-right: 5px;
 	}
 
 	&__text{

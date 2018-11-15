@@ -1,18 +1,53 @@
 .primary-nav{
+	background: $mainBlue;
+
+	@mixin atLarge {
+		background: white;
+	}
 
 	&__list{
 		list-style: none;
 		display: flex;
-		margin-left: 65%;
+		margin: 2px auto;
+		margin-top: 0;
+		padding-top: 0;
+		margin-left: -18px;
 
+		@mixin atLarge{
+			background: white;
+			margin-left: 65%;
+			margin-bottom: 1rem;
+			margin-top: 1rem;
+		}
 	}
 
 	&__item{
 		margin: 0rem 1rem 0rem 0rem;
 		padding: 0rem;
 		text-decoration: none;
-		color: $mainGray;
-		font-size: 1rem;
+		font-size: .7rem;
+		margin-left: 12px;
+		color: white;
 
+
+
+		@mixin atLarge{
+			font-size: 1.3rem;
+			margin-bottom: 0;
+			color: $mainGray;
+		}
+
+	}
+
+	&__icon{
+		padding-right: 8px;
+		color: white;
+		display: inline;
+
+		@mixin atLarge{
+			font-size: 1rem;
+			margin-bottom: 0;
+			color: $mainGray;
+		}
 	}
 }

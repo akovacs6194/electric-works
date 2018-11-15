@@ -7,19 +7,39 @@ header{
 	position: relative;
 
 	&__logo{
-		margin-left: 12%;
+		margin-left: 10px;
 		display: inline-block;
 		max-width: 35%;
 		height: auto;
+
+		@mixin atLarge{
+			margin-left: 12%;
+		}
 	}
+
 	&__slogan{
 		display: inline;
 		margin-left: 1rem;
 		position: absolute;
 		top: 50%;
 		font-style: italic;
-		font-size: 1.5rem;
+		font-size: .7rem;
+		
+
+		@mixin atLarge{
+			font-size: 1.5rem;
+		}
 
 		/*Resize for mobile*/
+	}
+}
+
+.line{
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 2px solid $mainBlue;
+
+	@mixin atLarge{
+		border-bottom: 0px ;
 	}
 }
