@@ -21,17 +21,30 @@
 			letter-spacing: 1px;
 		}
 	}
-	
+
 	&__p-header{
 		color: #831111;
 		text-align: center;
-	}
-	&__p-text{
-		line-height: 1;
-		font-size: .8rem;
+		font-size: 1.25rem;
+		margin-bottom: 20px;
 
 		@mixin atMedium{
-			line-height: 3.4;
+			margin-top: 25px;
+			margin-bottom: 30px;
+			font-size: 2rem;
+			font-weight: 300;
+		}
+	}
+	&__p-text{
+		line-height: 1.7;
+		font-size: .8rem;
+		margin-bottom: 25px;
+
+
+		@mixin atMedium{
+			line-height: 4;
+			margin-top: 25px;
+			margin-bottom: 40px;
 		}
 	}
 	&__image{
