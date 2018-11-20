@@ -1,45 +1,58 @@
-header{
-	background: white;
-}
-
 .header{
 	background: white;
 	position: relative;
+	height: 15vh;
+
+	@mixin atMedium {
+		height: 21vh;
+	}
+	
 
 	&__logo{
 		margin-left: 10px;
 		display: inline-block;
-		max-width: 35%;
-		height: auto;
+		max-width: 40%;
+		height: 100%;
 
-		@mixin atLarge{
-			margin-left: 12%;
+		@mixin atMedium{
+			max-width: 27%;
+			margin-left: 10%;
 		}
 	}
 
 	&__slogan{
 		display: inline;
-		margin-left: 1rem;
+		margin-left: .8rem;
 		position: absolute;
-		top: 50%;
+		top: 65%;
 		font-style: italic;
-		font-size: .7rem;
+		font-size: .6rem;
+
+		@mixin atSmall{
+			font-size: .9rem;
+		}
+
 		
+		@mixin atMedium{
+			font-size: 1.2rem;
+		}
 
 		@mixin atLarge{
 			font-size: 1.5rem;
+			margin-left: 1.7rem;
 		}
 
 		/*Resize for mobile*/
 	}
 }
 
-.line{
+/*.line{
+	margin-top: 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
 	border-bottom: 2px solid $mainBlue;
 
-	@mixin atLarge{
-		border-bottom: 0px ;
+	@mixin atMedium{
+		border-bottom: 0px;
 	}
-}
+}*/

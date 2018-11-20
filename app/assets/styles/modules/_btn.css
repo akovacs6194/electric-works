@@ -4,10 +4,13 @@
 	text-decoration: none;
 	padding: 1rem 1.5rem;
 	display: inline-block;
-
 	&--large {
 		padding: 1.3rem 2.3rem;
 	}
+	&__about{
+		margin-left: 40%;
+	}
+
 }
 
 /*Button responsive design in lecture 22 @ 6min*/
