@@ -456,7 +456,7 @@ template {
 }
 
 body, html {
-	font-family: 'Roboto', 'sans-serif';
+	font-family: ''Roboto', 'sans-serif'';
 	color: #333;
 	margin: 0;
 	padding: 0;
@@ -475,7 +475,7 @@ img {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)), url("/assets/images/hero/hero--image-cropped.jpg") no-repeat center;
 	/*CSS Transition: gradually increase then decrease gradient to give appearance of light brightening then dimming */
     background-size: cover;
-    height: 67vh;
+    height: 68vh;
 }
 
 .hero__text-content{
@@ -554,11 +554,18 @@ img {
 	display: inline-block;
 }
 
+.btn--large {
+		padding: 1rem 2rem;
+		margin-bottom: 2rem;
+	}
+
 @media (min-width: 768px) {
 
 .btn--large {
-		padding: 1.2rem 2.4rem;
-		font-size: 2rem
+		/*padding: 1.2rem 2.4rem;*/
+		padding: 1rem;
+		font-size: 2rem;
+		margin-bottom: 0
 	}
 	}
 
@@ -570,7 +577,7 @@ img {
 @media (min-width: 768px) {
 
 .btn--about{
-			margin-left: 40%;
+			margin-left: 26%;
 			margin-bottom: 0;
 			width: 250px
 	}
@@ -859,13 +866,19 @@ img {
 .about__p-text{
 			line-height: 4;
 			margin-top: 25px;
-			margin-bottom: 40px
+			margin-bottom: 20px
 	}
 	}
 
 .about__image{
 		margin-bottom: 50px;
+	/*	margin-left: 75px;*/
 	}
+
+.gutter{
+	width: 500px;
+	display: block;
+}
 
 .services{
 	height: 400px;
@@ -916,40 +929,55 @@ img {
 }
 
 .cta__text-content{
-    	margin: 0 auto;
-    	/*background: yellow;*/
-    	width: 40%;
+    	margin: 0 auto;  
+    	width: 70%;
     }
+
+/*background: yellow;
+    	border: 1px black solid;*/
 
 @media (min-width: 768px) {
 
 .cta__text-content{
-    		width: 70%;
+    		/*width: 70%;*/
     		padding: 45px 0
     }
 	}
 
 .cta__title{
     	color: white;
-    	font-size: 1rem;
+    	font-size: 2.5rem;
+    	text-align: center;
+    	font-weight: 600;
+    	margin-top: 2rem;
+    	margin-bottom: 1.5rem;
     }
 
 @media (min-width: 768px) {
 
 .cta__title{
+    		font-weight: 500;
+    		margin-top: 0;
+    		margin-bottom: 0;
     		font-size: 2rem
     }
 	}
 
 .cta__subtitle{
     	color: white;
-    	font-size: .8rem;
+    	font-size: 1.2rem;
+    	text-align: center;
+    	margin-bottom: 2.5rem;
+    	
+    	font-weight: 600;
     }
 
 @media (min-width: 768px) {
 
 .cta__subtitle{
-    		font-size: 1.6rem
+    		font-size: 1.6rem;
+    		margin-bottom: 0;
+    		font-weight: 500
     }
 	}
 
@@ -957,16 +985,89 @@ img {
     	padding: 0;
     }
 
-/*	background: yellow;*/
+/*	background: yellow;
+    	border: 1px black solid;*/
 
 @media (min-width: 768px) {
 
 .cta__btn{
-    	padding: 45px 0;
-    	margin-left: 90px
+    	padding: 45px 0
+    /*	margin-left: 90px;*/
     }
-	}	
+	}
 
+.footer__logo{
+		border: black 1px dashed;
+	}
+
+.footer__logo-image{
+		display: inline-block;
+		width: 60%;
+		margin-left: 30%;
+	}
+
+.footer__logo-text{
+		font-size: 1.5rem;
+		margin-top: -10px;
+		font-style: italic;
+		text-align: center;
+		margin-left: 25%;
+	}
+
+.footer__cf{
+		border: black 1px dashed;
+	}
+
+.footer__cf-form{
+		width: 400px;
+	}
+
+.footer__cf-title{
+		font-size: 2.5rem;
+	}
+
+.footer__cf-content{
+
+	}
+
+.footer__cf-col1{
+		width: 65%;
+		border: black 1px dashed;
+		display: inline;
+	}
+
+.footer__cf-col2{
+		margin-left: 12%;
+		border: black 1px dashed;
+		display: inline-block;
+	}
+
+.footer__li{
+		text-decoration: none;
+		list-style: none;
+		border-bottom: 1px solid #707070;
+
+	}
+
+.copyright{
+	background: #2B2C2C;
+}
+
+.copyright__text{
+		padding: 15px 0;
+		color: white;
+		margin-left: 40%;
+		margin-bottom: 0;
+	}
+
+.copyright__list{
+		padding: 15px 0;
+		list-style: none;
+		color: white;
+		margin-bottom: 0;
+		position: absolute;
+		right: 250px;
+	}
 
  
 

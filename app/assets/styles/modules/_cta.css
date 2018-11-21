@@ -5,41 +5,56 @@
     background-size: cover;
 
     &__text-content{
-    	margin: 0 auto;
-    	/*background: yellow;*/
-    	width: 40%;
+    	margin: 0 auto;  
+    	width: 70%;
+    	/*background: yellow;
+    	border: 1px black solid;*/
 
 
     	@mixin atMedium{
-    		width: 70%;
+    		/*width: 70%;*/
     		padding: 45px 0;
     	}
     }
 
     &__title{
     	color: white;
-    	font-size: 1rem;
+    	font-size: 2.5rem;
+    	text-align: center;
+    	font-weight: 600;
+    	margin-top: 2rem;
+    	margin-bottom: 1.5rem;
 
     	@mixin atMedium{
+    		font-weight: 500;
+    		margin-top: 0;
+    		margin-bottom: 0;
     		font-size: 2rem;
     	}
     }
     
     &__subtitle{
     	color: white;
-    	font-size: .8rem;
+    	font-size: 1.2rem;
+    	text-align: center;
+    	margin-bottom: 2.5rem;
+    	
+    	font-weight: 600;
 
     	@mixin atMedium{
     		font-size: 1.6rem;
+    		margin-bottom: 0;
+    		font-weight: 500;
     	}
     }
     &__btn{
     	padding: 0;
-    /*	background: yellow;*/
+    /*	background: yellow;
+    	border: 1px black solid;*/
 
     	@mixin atMedium{
     	padding: 45px 0;
-    	margin-left: 90px;
+    /*	margin-left: 90px;*/
     	}
     }
 }
