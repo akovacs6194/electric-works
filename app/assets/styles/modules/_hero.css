@@ -4,7 +4,7 @@
 	background: linear-gradient(to bottom, rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)), url("/assets/images/hero/hero--image-cropped.jpg") no-repeat center;
 	/*CSS Transition: gradually increase then decrease gradient to give appearance of light brightening then dimming */
     background-size: cover;
-    height: 68vh;
+    height: 67vh;
 
 	
 	&__text-content{
@@ -19,13 +19,13 @@
 	}
 
 	&__title {
-		margin-bottom: .2rem;
 		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 		font-weight: 400;
 
 		@mixin atSmall {
 			font-size: 1.4rem;
+			margin-bottom: .2rem;
 		}
 
 		@mixin atMedium {
@@ -40,7 +40,7 @@
 	&__subtitle {
 		margin-top: 0;
 		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
-		font-size: 1.2rem;
+		font-size: 1.35rem;
 		font-weight: 400;
 
 		@mixin atSmall {

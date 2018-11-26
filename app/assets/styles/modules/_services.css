@@ -1,5 +1,4 @@
 .services{
-	height: 400px;
 
 	&__header{
 		position: relative;
@@ -16,4 +15,39 @@
 		font-size: 2.5rem;
 		font-weight: 300;
 	}
+
+	&__card{
+		padding: 0 10px;
+		border: 0;
+		
+		@mixin atMedium {
+			padding: 0;
+		}
+	}
+}
+
+
+
+.card-title{
+	font-size: 1.3rem;
+	
+	@mixin atMedium{
+		font-size: 1.5rem;
+	}
+}
+
+.card-img-top{
+    width: 100%;
+    object-fit: cover;
+
+    @mixin atMedium{
+    	height: 15vw;
+    }
+
+    /*Resize for mobile*/
+}
+
+.card-body{
+	background: $mainBlue;
+	color: white;
 }

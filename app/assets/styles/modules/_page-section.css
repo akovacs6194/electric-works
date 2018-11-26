@@ -2,3 +2,12 @@
 	background: $mainBlue;
 	height: 10vh;
 }
+
+.vert-spacing{
+
+	padding: 1.5rem 0;
+
+	@mixin atMedium{
+		padding: 4rem 0;
+	}
+}

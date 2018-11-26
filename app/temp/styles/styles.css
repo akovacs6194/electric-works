@@ -475,7 +475,7 @@ img {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)), url("/assets/images/hero/hero--image-cropped.jpg") no-repeat center;
 	/*CSS Transition: gradually increase then decrease gradient to give appearance of light brightening then dimming */
     background-size: cover;
-    height: 68vh;
+    height: 67vh;
 }
 
 .hero__text-content{
@@ -491,16 +491,16 @@ img {
 	}
 
 .hero__title {
-		margin-bottom: .2rem;
 		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 		font-weight: 400;
 	}
 
 @media (min-width: 576px) {
 
 .hero__title {
-			font-size: 1.4rem
+			font-size: 1.4rem;
+			margin-bottom: .2rem
 	}
 	}
 
@@ -521,7 +521,7 @@ img {
 .hero__subtitle {
 		margin-top: 0;
 		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
-		font-size: 1.2rem;
+		font-size: 1.35rem;
 		font-weight: 400;
 	}
 
@@ -571,14 +571,14 @@ img {
 
 .btn--about{
 		width: 100%;
-		margin-bottom: 25px;
 	}
 
 @media (min-width: 768px) {
 
 .btn--about{
-			margin-left: 26%;
-			margin-bottom: 0;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
 			width: 250px
 	}
 	}
@@ -586,6 +586,22 @@ img {
 .btn--cta{
 		display: inline-block;
 		float: right;
+	}
+
+.btn--card{
+		background: white;
+		color: #000656;
+		font-size: 1rem;
+		padding: .75rem 4em;
+	}
+
+@media (min-width: 768px) {
+
+.btn--card{
+			font-size: 1.3rem;
+			padding-left: 3rem;
+			padding-right: 3rem
+	}
 	}
 
 /*Button responsive design in lecture 22 @ 6min*/
@@ -701,7 +717,7 @@ img {
 		position: absolute;
 		top: 65%;
 		font-style: italic;
-		font-size: .6rem;
+		font-size: .65rem;
 
 		/*Resize for mobile*/
 	}
@@ -811,12 +827,28 @@ img {
 	height: 10vh;
 }
 
-.about__header{
-		position: relative;
+.vert-spacing{
+
+	padding: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+
+.vert-spacing{
+		padding: 4rem 0
+}
 	}
 
-.about__top-margin{
-		margin-top: 25px;
+.wrapper {
+	padding-left: 18px;
+	padding-right: 18px;
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about__header{
+		position: relative;
 	}
 
 .about__header-text{
@@ -824,17 +856,22 @@ img {
 		width: 100%;
 		text-align: center;
 		position: absolute;
-		top: 35%;
-		font-weight: 300;
-		font-size: 1rem;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		        transform: translateY(-50%);
+		font-weight: 500;
+		font-size: 1.05rem;
 	}
 
 @media (min-width: 768px) {
 
 .about__header-text{
+			font-weight: 300;
 			font-size: 2.5rem;
 			top: 19%;
-			letter-spacing: 1px
+			letter-spacing: 1px;
+			-webkit-transform: translateY(0%);
+			        transform: translateY(0%)
 	}
 	}
 
@@ -848,7 +885,6 @@ img {
 @media (min-width: 768px) {
 
 .about__p-header{
-			margin-top: 25px;
 			margin-bottom: 30px;
 			font-size: 2rem;
 			font-weight: 300
@@ -866,23 +902,14 @@ img {
 .about__p-text{
 			line-height: 4;
 			margin-top: 25px;
-			margin-bottom: 20px
+			margin-bottom: 20px;
+			font-size: 1rem
 	}
 	}
 
 .about__image{
-		margin-bottom: 50px;
-	/*	margin-left: 75px;*/
+	margin-top: 20px;
 	}
-
-.gutter{
-	width: 500px;
-	display: block;
-}
-
-.services{
-	height: 400px;
-}
 
 .services__header{
 		position: relative;
@@ -900,8 +927,47 @@ img {
 		font-weight: 300;
 	}
 
-.projects {
-	height: 400px;
+.services__card{
+		padding: 0 10px;
+		border: 0;
+	}
+
+@media (min-width: 768px) {
+
+.services__card{
+			padding: 0
+	}
+	}
+
+.card-title{
+	font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+
+.card-title{
+		font-size: 1.5rem
+}
+	}
+
+.card-img-top{
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+
+    /*Resize for mobile*/
+}
+
+@media (min-width: 768px) {
+
+.card-img-top{
+    	height: 15vw
+}
+	}
+
+.card-body{
+	background: #000656;
+	color: white;
 }
 
 .projects__header{
@@ -919,6 +985,15 @@ img {
 		font-size: 2.5rem;
 		font-weight: 300;
 	}
+
+.space{
+	margin: 0;
+	padding: 0;
+}
+
+.tr{
+	padding-bottom: 1.5rem;
+}
 
 .cta{
 	position: relative;
@@ -940,7 +1015,7 @@ img {
 
 .cta__text-content{
     		/*width: 70%;*/
-    		padding: 45px 0
+    		padding: 75px 0
     }
 	}
 
@@ -991,7 +1066,7 @@ img {
 @media (min-width: 768px) {
 
 .cta__btn{
-    	padding: 45px 0
+    	padding: 75px 0
     /*	margin-left: 90px;*/
     }
 	}
@@ -1018,12 +1093,19 @@ img {
 		border: black 1px dashed;
 	}
 
+.footer__cf-container{
+		border: black 1px solid;
+		width: 400px;
+	}
+
 .footer__cf-form{
 		width: 400px;
+		padding: 0;
 	}
 
 .footer__cf-title{
 		font-size: 2.5rem;
+		text-align: center;
 	}
 
 .footer__cf-content{
@@ -1031,13 +1113,12 @@ img {
 	}
 
 .footer__cf-col1{
-		width: 65%;
+		width: 200px;
 		border: black 1px dashed;
 		display: inline;
 	}
 
 .footer__cf-col2{
-		margin-left: 12%;
 		border: black 1px dashed;
 		display: inline-block;
 	}

@@ -1,5 +1,4 @@
 .projects {
-	height: 400px;
 
 	&__header{
 		position: relative;
@@ -16,4 +15,13 @@
 		font-size: 2.5rem;
 		font-weight: 300;
 	}
+}
+
+.space{
+	margin: 0;
+	padding: 0;
+}
+
+.tr{
+	padding-bottom: 1.5rem;
 }
