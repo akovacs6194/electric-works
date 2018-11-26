@@ -1,54 +1,69 @@
 .footer{
 
 	&__logo{
-		border: black 1px dashed;
+/*		border: black 1px dashed;*/
 	}
 
 	&__logo-image{
 		display: inline-block;
 		width: 60%;
-		margin-left: 30%;
+		margin-left: 20%;
+
+		@mixin atMedium{
+			margin-left: 30%;
+		}
 	}
 
 	&__logo-text{
-		font-size: 1.5rem;
-		margin-top: -10px;
+		font-size: 1rem;
+		margin-top: -15px;
 		font-style: italic;
+		width: 100%;
 		text-align: center;
-		margin-left: 25%;
+		margin-bottom: 0;
+	
+
+		@mixin atMedium{
+			font-size: 1.5rem;
+			margin-left: 10%;
+			margin-bottom: 40px;
+		}
 	}
 
 	&__cf{
-		border: black 1px dashed;
+	/*	border: black 1px dashed;*/
 	}
 
 	&__cf-container{
-		border: black 1px solid;
-		width: 400px;
+/*		border: black 1px solid;*/
+		width: 325px;
 	}
 
 	&__cf-form{
-		width: 400px;
+		width: 325px;
 		padding: 0;
 	}
 
 	&__cf-title{
-		font-size: 2.5rem;
-		text-align: center;
+		margin-top: .8rem;
+		font-size: 1.8rem;
+		width: 100%;
+		text-align: center;		
 	}
 
 	&__cf-content{
-
+		width: 100%;
 	}
 
 	&__cf-col1{
 		width: 200px;
-		border: black 1px dashed;
+/*		border: black 1px dashed;*/
 		display: inline;
+		
 	}
 
 	&__cf-col2{
-		border: black 1px dashed;
+		/*border: black 1px dashed;*/
 		display: inline-block;
 	}
 
@@ -59,4 +74,28 @@
 
 	}
 
+}
+
+#cf-col1-1{
+	margin-right: 80px;
+}
+
+#cf-col1-2{
+	margin-right: 91.86px;
+}
+
+#cf-col1-3{
+	margin-right: 55px;
+
+	@mixin atMedium{
+	margin-right: 65px;
+	}
+}
+
+#cf-col1-4{
+	margin-right: 113.92px;
+}
+
+#cf-col1-5{
+	margin-right: 65.75px;
 }

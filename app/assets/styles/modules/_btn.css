@@ -28,9 +28,21 @@
 		}
 	}
 
+	&--about:hover{
+		border: $mainBtn 1px solid;
+		color: $mainBtn;
+		background: white;
+	}
+
 	&--cta{
 		display: inline-block;
 		float: right;
+	}
+
+	&--cta:hover{
+		border: $mainBtn 1px solid;
+		color: $mainBtn;
+		background: white;
 	}
 
 	&--card{
@@ -45,6 +57,12 @@
 			padding-left: 3rem;
 			padding-right: 3rem;
 		}
+	}
+
+	&--card:hover{
+		border: white 1px solid;
+		color: white;
+		background: $mainBlue;
 	}
 }
 

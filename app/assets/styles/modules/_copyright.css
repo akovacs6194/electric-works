@@ -2,10 +2,20 @@
 	background: #2B2C2C;
 
 	&__text{
-		padding: 15px 0;
+		width: 100%;
+		text-align: center;
 		color: white;
-		margin-left: 40%;
-		margin-bottom: 0;
+		padding-top: 8px;
+
+		@mixin atMedium{
+			text-align: left;
+			padding: 15px 0;
+			color: white;
+			margin-left: 20%;
+			margin-bottom: 0;
+		}
+	
+
 	}
 	&__list{
 		padding: 15px 0;
@@ -13,6 +23,17 @@
 		color: white;
 		margin-bottom: 0;
 		position: absolute;
-		right: 250px;
+		right: 400px;
+		
+	}
+
+	&__nav-item{
+		margin-left: 25px;
+		color: white;
+	}
+
+	&__nav-item:hover{
+		text-decoration: none;
+		color: yellow;
 	}
 }
