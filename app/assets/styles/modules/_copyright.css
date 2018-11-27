@@ -23,13 +23,17 @@
 		color: white;
 		margin-bottom: 0;
 		position: absolute;
-		right: 400px;
 		
 	}
 
 	&__nav-item{
-		margin-left: 25px;
-		color: white;
+		display: none;
+
+		@mixin atMedium{
+			display: inline;
+			margin-left: 25px;
+			color: white;
+		}
 	}
 
 	&__nav-item:hover{

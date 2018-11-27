@@ -20,7 +20,6 @@
 
 	&__item{
 		text-decoration: none;
-		text-transform: uppercase;
 		font-size: .6rem;
 		font-weight: 400;
 		color: white;
@@ -53,7 +52,12 @@
 		@mixin atMedium{
 			margin-right: 0;
 			font-size: 2rem;	 
-			color: $mainGray;		}	
+			color: $mainGray;		
+		}	
+	}
+
+	&__icon:hover{
+		color: #d3d321;
 	}
 }
 
@@ -61,7 +65,7 @@
 	@mixin atMedium{
 		color: white;
 		background-color: rgba($mainBlue, .71);
-		padding: 1.1rem 2.2rem;
+		padding: .9rem 2.2rem;
 	}
 }
 

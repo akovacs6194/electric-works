@@ -37,6 +37,11 @@
 	&__cf-container{
 /*		border: black 1px solid;*/
 		width: 325px;
+		margin: 0 auto;
+
+		@mixin atMedium{
+			margin-top: 2rem;
+		}
 	}
 
 	&__cf-form{
@@ -74,6 +79,27 @@
 
 	}
 
+
+
+	&__icon{
+		width: 95%;
+		margin-left: 5px;
+		margin-top: 15px;
+		margin-bottom: 25px;
+
+		@mixin atSmall{
+			width: 30%;
+			margin-left: 36%;
+		}
+
+
+		@mixin atMedium{
+			margin-top: 1rem;
+			margin-left: 0;
+			width: 60%;
+			transform: rotate(30deg);
+		}
+	}
 }
 
 #cf-col1-1{

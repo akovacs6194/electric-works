@@ -1,0 +1,54 @@
+.about__page-section{
+	border-top: .5px white solid;
+
+	@mixin atMedium{
+		border: 0;
+	}
+}
+
+.page-content{
+	background: url("/assets/images/about-bg2.png") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.about__cat{
+	position: relative;
+}
+
+.w-box{
+	background: white;
+	border: $mainBlue 2px solid;
+}
+
+.b-spacing{
+	margin-bottom: 50px;
+}
+
+.title{
+	font-size: 1.25rem;
+	padding: 2rem;
+	text-align: center;
+	margin: 0;
+}
+
+
+.active-title{
+	background: $mainBlue;
+	color: white;
+	border: 1px white solid;
+}
+
+.opaque{
+	background-color: rgba(250, 250, 250, .8);
+}
+
+.text-box{
+	height: 100%;
+}
+
+.about__text{
+	padding: 1.5rem;
+	font-size: 1.25rem;
+	line-height: 3;
+}
