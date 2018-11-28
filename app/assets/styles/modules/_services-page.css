@@ -1,0 +1,30 @@
+.services{
+	&__page-content{
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/assets/images/services-bg.jpg") no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&__title{
+		color: white;
+		text-align: center;
+		padding-bottom: 1.5rem;
+	}
+
+	&__list1{
+		margin-left: 33%;
+	}
+
+	&__li{
+		color: white;
+		list-style: none;
+		margin-bottom: 2.5rem;
+		font-size: 1.2rem;
+	}
+
+	&__solutions-header{
+		color: white;
+		text-align: center;
+		transform: translateY(150%);
+	}
+}

@@ -1290,8 +1290,9 @@ img {
 }
 	}
 
-.page-content{
-	background: url("/assets/images/about-bg2.png") no-repeat;
+.about__page-content{
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .2)), to(rgba(0, 0, 0, .2))),url("/assets/images/about-bg4.jpg") no-repeat;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),url("/assets/images/about-bg4.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -1332,8 +1333,90 @@ img {
 
 .about__text{
 	padding: 1.5rem;
-	font-size: 1.25rem;
-	line-height: 3;
+	font-size: 1rem;
+	line-height: 4.5;
+	font-weight: 500;
+}
+
+.services__page-content{
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .7)), to(rgba(0, 0, 0, .7))), url("/assets/images/services-bg.jpg") no-repeat;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/assets/images/services-bg.jpg") no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+.services__title{
+		color: white;
+		text-align: center;
+		padding-bottom: 1.5rem;
+	}
+
+.services__list1{
+		margin-left: 33%;
+	}
+
+.services__li{
+		color: white;
+		list-style: none;
+		margin-bottom: 2.5rem;
+		font-size: 1.2rem;
+	}
+
+.services__solutions-header{
+		color: white;
+		text-align: center;
+		-webkit-transform: translateY(150%);
+		        transform: translateY(150%);
+	}
+
+.solutions__page-content{
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, .6))), url("/assets/images/solutions-bg.jpg") no-repeat;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/assets/images/solutions-bg.jpg") no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+.solutions__statement{
+		font-size: 1.1rem;
+		color: white;
+	}
+
+.solutions__header{
+		font-size: 1.4rem;
+		margin-bottom: 1.7rem;
+		color: white;
+	}
+
+.solutions__list{
+		margin-bottom: 2rem;
+	}
+
+.solutions__li{
+		list-style: none;
+		margin-bottom: 1.5rem;
+		font-size: .9rem;
+		color: white;
+	}
+
+.solutions__contact{
+		font-size: 1.4rem;
+		margin-bottom: 3rem;
+		color: white;
+	}
+
+.solutions-nav{
+	border-left: 1px #C5C5C5 solid;
+}
+
+.solutions-nav__li{
+		list-style: none;
+		font-size: 1.6rem;
+		margin-bottom: 1.5rem;
+		color: white;
+	}
+
+.solutions__active{
+	color: #0044FF;
 }
 
  

@@ -1,0 +1,51 @@
+.solutions{
+	&__page-content{
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/assets/images/solutions-bg.jpg") no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&__statement{
+		font-size: 1.1rem;
+		color: white;
+	}
+
+	&__header{
+		font-size: 1.4rem;
+		margin-bottom: 1.7rem;
+		color: white;
+	}
+
+	&__list{
+		margin-bottom: 2rem;
+	}
+
+	&__li{
+		list-style: none;
+		margin-bottom: 1.5rem;
+		font-size: .9rem;
+		color: white;
+	}
+
+	&__contact{
+		font-size: 1.4rem;
+		margin-bottom: 3rem;
+		color: white;
+	}
+}
+
+.solutions-nav{
+	border-left: 1px #C5C5C5 solid;
+
+	&__li{
+		list-style: none;
+		font-size: 1.6rem;
+		margin-bottom: 1.5rem;
+		color: white;
+	}
+}
+
+.solutions__active{
+	color: #0044FF;
+}
+
