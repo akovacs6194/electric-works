@@ -23,7 +23,7 @@
 		font-size: .6rem;
 		font-weight: 400;
 		color: white;
-		margin-right: 25px;
+		margin-right: 20px;
 		text-align: center;
 
 		@mixin atMedium{
