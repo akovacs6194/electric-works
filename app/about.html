@@ -39,7 +39,7 @@
 		<nav class="primary-nav">
 			<div class="container d-flex h-100 justify-content-center justify-content-md-end">
 				<ul class="primary-nav__list d-flex align-items-center m-0 p-0">
-					<li><i class="fas fa-bolt primary-nav__icon"></i><li>
+					<li><a class="primary-nav__item" href="./index.html"><i class="fas fa-bolt primary-nav__icon"></i></a><li>
 					<li><a class="primary-nav__item" href="./index.html">Home</a></li>
 					<li><a class="primary-nav__item active" href="./about.html">About</a></li>
 					<li><a class="primary-nav__item" href="./services.html">Services</a></li>
@@ -60,49 +60,135 @@
 		<div class="about__page-content vert-spacing">
 			<div class="container-fluid wrapper">
 				<div class="row">
-					<div class="col-md-3 d-flex flex-column">
-						<div class="about__cat w-box b-spacing">
-							<h2 class="title">Electrical Services & Repairs</h2>
-						</div>
-						<div class="about__cat w-box b-spacing">
-							<h2 class="title active-title">Emergency Electrical Services</h2>
-						</div>
-						<div class="about__cat w-box b-spacing">
-							<h2 class="title">General Electrical Services</h2>
-						</div>
-						<div class="about__cat w-box">
-							<h2 class="title">Electrical Contractors</h2>
-						</div>
+					<div class="col-md-3 d-flex flex-md-column tab">
+						<button class="about__cat w-box b-spacing tablink" onclick="openTab(event, 'tab1')">
+							<h2 class="about__title">Electrical Services & Repairs</h2>
+						</button>
+						<button class="about__cat w-box b-spacing tablink" onclick="openTab(event, 'tab2')" id="defaultOpen">
+							<h2 class="about__title">Emergency Electrical Services</h2>
+						</button>
+						<button class="about__cat w-box b-spacing tablink" onclick="openTab(event, 'tab3')">
+							<h2 class="about__title">General Electrical Services</h2>
+						</button>
+						<button class="about__cat w-box tablink" onclick="openTab(event, 'tab4')">
+							<h2 class="about__title">Electrical Contractors</h2>
+						</button>
+					</div>
+					<div class="col-md-3 d-flex d-md-none">
+						<button class="about__cat w-box b-spacing tablink" onclick="openTab(event, 'tab5')">
+							<h2 class="about__title">Lighting Fixtures & <br> Ceiling Fan Installation</h2>
+						</button>
+						<button class="about__cat w-box b-spacing tablink" onclick="openTab(event, 'tab6')">
+							<h2 class="about__title">Commercial Electrical Services</h2>
+						</button>
+						<button class="about__cat w-box b-spacing tablink" onclick="openTab(event, 'tab7')">
+							<h2 class="about__title">Outdoor Electrical Services</h2>
+						</button>
+						<button class="about__cat w-box tablink" onclick="openTab(event, 'tab8')">
+	 						<h2 class="about__title">Generators</h2>
+						</button>
 					</div>
 					<div class="col-md-6">
-						<div class="opaque w-box text-box">
-							<p class="about__text">
-								For our residential customers whether it’s a flickering 
-								light, breaker tripping or an electrical panel that needs to 
-								be replaced we do it all - there’s no job too big or too 
-								small. Our electricians know exactly what to look for when 
-								presented with an emergency electrical problem and how 
-								to fix that problem safely and quickly. When an 
-								unexpected electrical problem occurs you want the best, 
-								you don’t want to settle for just any repairman. Electric 
-								Works’ highly trained electricians are the local experts 
-								and have been since 1992.
-							</p>
+						<div class="opaque w-box text-box t-m-spacing">
+							<div id="tab1" class="tabcontent">
+								<p class="about__text">
+									Services - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<div id="tab2" class="tabcontent">
+								<p class="about__text">
+									For our residential customers whether it’s a flickering 
+									light, breaker tripping or an electrical panel that needs to 
+									be replaced we do it all - there’s no job too big or too 
+									small. Our electricians know exactly what to look for when 
+									presented with an emergency electrical problem and how 
+									to fix that problem safely and quickly. When an 
+									unexpected electrical problem occurs you want the best, 
+									you don’t want to settle for just any repairman. Electric 
+									Works’ highly trained electricians are the local experts 
+									and have been since 1992.
+								</p>
+							</div>
+							<div id="tab3" class="tabcontent">
+								<p class="about__text">
+									General - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<div id="tab4" class="tabcontent">
+								<p class="about__text">
+									Contractors - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<div id="tab5" class="tabcontent">
+								<p class="about__text">
+									Fixtures - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<div id="tab6" class="tabcontent">
+								<p class="about__text">
+									Commercial - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<div id="tab7" class="tabcontent">
+								<p class="about__text">
+									Outdoor - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<div id="tab8" class="tabcontent">
+								<p class="about__text">
+									Generators - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
-						<div class="about__cat w-box b-spacing">
-							<h2 class="title">Lighting Fixtures & <br> Ceiling Fan Installation</h2>
-						</div>
-						<div class="about__cat w-box b-spacing">
-							<h2 class="title">Commercial Electrical Services</h2>
-						</div>
-						<div class="about__cat w-box b-spacing">
-							<h2 class="title">Outdoor Electrical Services</h2>
-						</div>
-						<div class="about__cat w-box">
-	 						<h2 class="title">Generators</h2>
-						</div>
+					<div class="col-md-3 d-none d-md-flex flex-md-column">
+						<button class="about__cat w-box b-spacing tablink" onclick="openTab(event, 'tab5')">
+							<h2 class="about__title">Lighting Fixtures & <br> Ceiling Fan Installation</h2>
+						</button>
+						<button class="about__cat w-box b-spacing tablink" onclick="openTab(event, 'tab6')">
+							<h2 class="about__title">Commercial Electrical Services</h2>
+						</button>
+						<button class="about__cat w-box b-spacing tablink" onclick="openTab(event, 'tab7')">
+							<h2 class="about__title">Outdoor Electrical Services</h2>
+						</button>
+						<button class="about__cat w-box tablink" onclick="openTab(event, 'tab8')">
+	 						<h2 class="about__title">Generators</h2>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -182,5 +268,6 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript" src="assets/scripts/about.js"></script>
 	</body>
 </html>

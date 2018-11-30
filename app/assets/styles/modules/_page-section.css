@@ -1,7 +1,13 @@
 .page-section{
+	border-top: .5px white solid;
 	background: $mainBlue;
-	height: 10vh;
 	position: relative;
+	height: 6vh;
+
+	@mixin atMedium{
+		height: 10vh;
+		border: 0;
+	}
 }
 
 .vert-spacing{

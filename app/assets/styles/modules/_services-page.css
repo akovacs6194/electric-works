@@ -5,26 +5,58 @@
 		background-size: cover;
 	}
 
-	&__title{
+	&__title-container{
 		color: white;
 		text-align: center;
 		padding-bottom: 1.5rem;
 	}
 
-	&__list1{
-		margin-left: 33%;
+	&__title{
+		font-size: 1.1rem;
+
+		@mixin atMedium{
+			font-size: 1.8rem;
+		}
 	}
+
+	&__list1{
+
+		@mixin atMedium{
+			margin-left: 33%;
+		}	
+	}
+
 
 	&__li{
 		color: white;
 		list-style: none;
-		margin-bottom: 2.5rem;
-		font-size: 1.2rem;
+		margin-bottom: 1rem;
+		font-size: .8rem;
+
+		@mixin atMedium{
+			margin-bottom: 2.5rem;
+			font-size: 1.2rem;
+		}	
+	}
+
+	&__solutions-header-container{
+		color: white;
+		text-align: center;
+
+
+		@mixin atMedium{
+			transform: translateY(150%);
+
+		}
 	}
 
 	&__solutions-header{
-		color: white;
-		text-align: center;
-		transform: translateY(150%);
+		font-size: 1.2rem;
+		margin-top: 15px;
+
+		@mixin atMedium{
+			font-size: 1.8rem;
+			margin-top: 0;
+		}
 	}
 }
