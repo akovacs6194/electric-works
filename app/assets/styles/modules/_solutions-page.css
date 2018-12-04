@@ -32,6 +32,16 @@
 		margin-bottom: 3rem;
 		color: white;
 	}
+
+	&__button{
+		background: none;
+		border: none;
+		color: white;
+	}
+}
+
+button:focus{
+	outline:0;
 }
 
 .solutions-nav{
@@ -45,7 +55,8 @@
 	}
 }
 
-.solutions__active{
+.sol-active-title{ 	
 	color: #0044FF;
+	background: none;
 }
 

@@ -60,3 +60,11 @@
 		}
 	}
 }
+
+.m-br{
+	display: inline;
+
+	@mixin atMedium{
+		display: none`;
+	}
+}

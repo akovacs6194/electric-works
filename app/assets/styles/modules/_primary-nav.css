@@ -1,16 +1,20 @@
+a:hover{
+	text-decoration: none;
+}
+
 .primary-nav{
 	background: $mainBlue;
-	height: 30px;
 	border-top: 1px solid $mainGray;
-
+	
 	@mixin atMedium {
 		background: white;
-		height: 6vh;
-		/*50px*/
+		padding: .4rem;
+
 	}
 
 	&__list{
 		list-style: none;
+		padding-right: 2.2rem;
 
 		@mixin atMedium{
 			background: white;
@@ -28,17 +32,24 @@
 
 		@mixin atMedium{
 			font-size: 1.3rem;
+			transition: 0.7s;
 			color: #151C32;
 			margin-right: 0px;
 			margin-left: 15px;
-			padding: .9rem 1rem;
+			padding: 0 1rem;
 		}
 
 	}
 
 	&__item:hover{
-		text-decoration: none;
-		color: $mainBlue;
+
+		@mixin atMedium{
+			text-decoration: none;
+			color: #FFF;
+			background: $mainBlue;
+			padding: .7rem 1rem;
+			overflow: hidden;
+		}
 	}
 
 	&__icon{
@@ -46,10 +57,11 @@
 		color: white;
 		display: inline;
 		font-size: .9rem;
-		margin-right: 15px;
 		margin-left: 17px;
+		margin-right: 13px;
 
 		@mixin atMedium{
+			text-decoration: none;
 			margin-right: 0;
 			font-size: 2rem;	 
 			color: $mainGray;		
@@ -63,14 +75,13 @@
 
 .active{
 	@mixin atMedium{
-		color: white;
-		background-color: rgba($mainBlue, .71);
-		padding: .9rem 2.2rem;
+		color: #831111;
+		font-weight: bold;
 	}
 }
 
 .active:hover {
 	@mixin atMedium{
-		color: yellow;
+	
 	}
 }
