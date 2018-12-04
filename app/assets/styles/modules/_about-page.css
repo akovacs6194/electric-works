@@ -6,10 +6,15 @@
 	}
 }
 
-.about__page-content{
+/*.about__page-content{
 	background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),url("/assets/images/about-bg4.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
+}*/
+
+.about__page-content{
+	background: linear-gradient(to bottom, #fafafa, #fff);
+/*	background: #fafafa;*/
 }
 
 .about__cat{
@@ -20,12 +25,15 @@
 	@mixin atMedium{
 		width: 293px;
 		height: 115px;
+		cursor: pointer;
 	}
 }
 
 .w-box{
 	background: white;
 	border: $mainBlue 2px solid;
+	box-shadow: 0 0 4px #AAA; 
+	border-radius: 5px;
 }
 
 .b-spacing{

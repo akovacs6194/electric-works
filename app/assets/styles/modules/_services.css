@@ -3,6 +3,7 @@
 	&__card{
 		padding: 0 10px;
 		border: 0;
+		box-shadow: 3px 3px 4px #AAA;
 		
 		@mixin atMedium {
 			padding: 0;

@@ -8,7 +8,7 @@
 		@mixin atMedium{
 			margin-bottom: 30px;
 			font-size: 2rem;
-			font-weight: 300;
+			font-weight: 450;
 		}
 	}
 
