@@ -12,7 +12,7 @@ function openTab(e, tabId) {
 	for (i = 0; i < tabLink.length; i++) {
 		tabLink[i].className = tabLink[i].className.replace(" sol-active-title", "");
 	}
-	//Display correct tabContent
+	//Display correct tabContent and add 'active-title' class to newly selected tab
 	document.getElementById(tabId).style.display = "block";
 	e.currentTarget.className += " sol-active-title";
 
