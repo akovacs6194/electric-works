@@ -1,8 +1,7 @@
 .hero{
 	position: relative;
 	overflow: hidden;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)), url("app/assets/images/hero/hero--image-cropped.jpg") no-repeat center;
-	/*CSS Transition: gradually increase then decrease gradient to give appearance of light brightening then dimming */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)), url("./assets/images/hero/hero--image-cropped.jpg") no-repeat center;
     background-size: cover;
     height: 58vh;
     
