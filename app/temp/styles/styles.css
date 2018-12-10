@@ -1501,8 +1501,8 @@ a:hover{
 	}
 
 .solutions__page-content{
-		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, .6))), url("https://i.imgur.com/Nkw6hYT.jpg") no-repeat;
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://i.imgur.com/Nkw6hYT.jpg") no-repeat;
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, .6))), url("https://i.imgur.com/QMCzOX0.jpg") no-repeat;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://i.imgur.com/QMCzOX0.jpg") no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
