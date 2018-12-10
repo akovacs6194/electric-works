@@ -1032,8 +1032,8 @@ a:hover{
 .cta{
 	position: relative;
 	overflow: hidden;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .45)), to(rgba(0, 0, 0, .45))), url("app/assets/images/cta.jpg") no-repeat center;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("app/assets/images/cta.jpg") no-repeat center;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .45)), to(rgba(0, 0, 0, .45))), url("https://i.imgur.com/LPX0pUM.jpg") no-repeat center;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("https://i.imgur.com/LPX0pUM.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -1418,8 +1418,8 @@ a:hover{
 }
 
 .services__page-content{
-		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .7)), to(rgba(0, 0, 0, .7))), url("/assets/images/services-bg.jpg") no-repeat;
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/assets/images/services-bg.jpg") no-repeat;
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .7)), to(rgba(0, 0, 0, .7))), url("https://i.imgur.com/Nkw6hYT.jpg") no-repeat;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://i.imgur.com/Nkw6hYT.jpg") no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
@@ -1501,8 +1501,8 @@ a:hover{
 	}
 
 .solutions__page-content{
-		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, .6))), url("/assets/images/solutions-bg.jpg") no-repeat;
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/assets/images/solutions-bg.jpg") no-repeat;
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, .6))), url("https://i.imgur.com/Nkw6hYT.jpg") no-repeat;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://i.imgur.com/Nkw6hYT.jpg") no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
