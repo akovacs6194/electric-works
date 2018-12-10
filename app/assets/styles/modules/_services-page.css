@@ -1,6 +1,6 @@
 .services{
 	&__page-content{
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/assets/images/services-bg.jpg") no-repeat;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://i.imgur.com/Nkw6hYT.jpg") no-repeat;
 		background-position: center;
 		background-size: cover;
 	}

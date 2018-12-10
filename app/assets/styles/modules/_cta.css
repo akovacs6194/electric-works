@@ -1,7 +1,7 @@
 .cta{
 	position: relative;
 	overflow: hidden;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/assets/images/cta.jpg") no-repeat center;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("https://i.imgur.com/LPX0pUM.jpg") no-repeat center;
     background-size: cover;
 
     &__text-content{
