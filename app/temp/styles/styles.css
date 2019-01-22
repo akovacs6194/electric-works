@@ -1562,6 +1562,20 @@ button:focus{
 	background: none;
 }
 
+.contact__map{
+	width: 90vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@media (min-width: 768px) {
+
+.contact__map{
+		width: 100%
+}
+	}
+
  
 
 

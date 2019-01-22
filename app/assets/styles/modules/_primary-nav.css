@@ -6,6 +6,7 @@ a:hover{
 	background: $mainBlue;
 	border-top: 1px solid $mainGray;
 	
+	
 	@mixin atMedium {
 		background: white;
 		padding: .4rem;
@@ -15,7 +16,8 @@ a:hover{
 	&__list{
 		list-style: none;
 		padding-right: 2.2rem;
-
+	
+	
 		@mixin atMedium{
 			background: white;
 		
@@ -29,6 +31,7 @@ a:hover{
 		color: white;
 		margin-right: 20px;
 		text-align: center;
+
 
 		@mixin atMedium{
 			font-size: 1.3rem;
