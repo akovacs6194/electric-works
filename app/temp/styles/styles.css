@@ -911,6 +911,18 @@ a:hover{
 }
 	}
 
+.vert-spacing-sm{
+
+	padding: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+
+.vert-spacing-sm{
+		padding: 2.5rem 0
+}
+	}
+
 .header-text{
 		color: white;
 		width: 100%;
@@ -1412,7 +1424,7 @@ a:hover{
 .about__text{
 		padding: 1.5rem;
 		font-size: 1rem;
-		line-height: 2.5;
+		line-height: 3.3;
 		font-weight: 500
 }
 	}
@@ -1568,6 +1580,50 @@ button:focus{
 .sol-active-title{ 	
 	color: #0044FF;
 	background: none;
+}
+
+.unstyled {
+	list-style: none;
+}
+
+.licenses {
+	background: white;
+	
+}
+
+.licenses-title {
+	color: #831111;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.licenses-subtitle {
+	color: #831111;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 1.3rem;
+}
+
+.licenses-li {
+	font-size: 1.4rem;
+	color: #707070;
+}
+
+.licenses-li a {
+	font-size: 1.4rem;
+	color: #000656;
+}
+
+.licenses-li:hover a{
+	color: #831111;
+}
+
+.licenses-li-header{
+	text-align: center;
+	color: #831111;
+	padding: 1.3rem;
+	font-size: 1.4rem;
 }
 
 .contact__map{
