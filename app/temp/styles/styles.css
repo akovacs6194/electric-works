@@ -1584,6 +1584,15 @@ button:focus{
 }
 	}
 
+.wrench {
+	font-size: 30px;
+
+}
+
+.side-space {
+	margin: 0 2rem;
+}
+
  
 
 
