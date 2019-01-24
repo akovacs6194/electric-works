@@ -1595,6 +1595,7 @@ button:focus{
 	color: #831111;
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
+	margin-top: -1rem;
 	text-align: center;
 }
 
@@ -1607,7 +1608,7 @@ button:focus{
 
 .licenses-li {
 	font-size: 1.4rem;
-	color: #707070;
+	color: #222;
 }
 
 .licenses-li a {
