@@ -54,7 +54,6 @@
 	@mixin atMedium{
 	font-size: 1.25rem;
 	padding: 2rem;
-	margin: 0;
 	}
 }
 

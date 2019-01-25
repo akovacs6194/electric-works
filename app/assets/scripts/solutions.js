@@ -1,7 +1,7 @@
 function openTab(e, tabId) {
 	var i, tabContent, tabLink;
 
-	// hide all tabcContent when user clicks a button
+	// hide all tabContent when user clicks a button
 	tabContent = document.getElementsByClassName("tabContent");
 	for (i = 0; i < tabContent.length; i++) {
 		tabContent[i].style.display = "none";
